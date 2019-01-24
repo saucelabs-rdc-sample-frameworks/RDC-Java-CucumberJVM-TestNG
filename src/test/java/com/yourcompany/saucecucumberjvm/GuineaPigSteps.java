@@ -28,7 +28,7 @@ public class GuineaPigSteps {
         caps.setCapability("testobject_api_key", System.getenv("TESTOBJECT_API_KEY"));
         caps.setCapability("platformName", System.getenv("platformName"));
 
-	    driver = new RemoteWebDriver(new URL(System.getenv("APPIUM_URL"), caps);
+	    driver = new RemoteWebDriver(new URL(System.getenv("APPIUM_URL")), caps);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		resultReporter = new ResultReporter();
